@@ -97913,6 +97913,34 @@
     "scope": null
   },
   {
+    "ID": "c:@F@BlinkLed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void BlinkLed(void)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\stopwatch\\StopWatch.h"
+    },
+    "name": "BlinkLed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BlinkLed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void BlinkLed(void)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\stopwatch\\StopWatch.h"
+    },
+    "name": "BlinkLed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@PORTA_init",
     "What": "Function",
     "defdec": "Def",
@@ -98175,6 +98203,34 @@
       "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\stopwatch\\Stopwatch.c"
     },
     "name": "y",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BlinkLed",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BlinkLed(void)",
+    "location": {
+      "column": "6",
+      "line": "68",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\stopwatch\\Stopwatch.c"
+    },
+    "name": "BlinkLed",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Stopwatch.c@1134@F@BlinkLed@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "10",
+      "line": "69",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\stopwatch\\Stopwatch.c"
+    },
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },

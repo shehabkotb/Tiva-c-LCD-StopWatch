@@ -1,2 +1,7 @@
 Stopwatch.pbi: \
-  C:\Users\lilwiz\Documents\embedded\ projects\stopwatch\Stopwatch.c
+  C:\Users\lilwiz\Documents\embedded\ projects\stopwatch\Stopwatch.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  C:\Users\lilwiz\Documents\embedded\ projects\stopwatch/tm4c123gh6pm.h \
+  C:\Users\lilwiz\Documents\embedded\ projects\stopwatch/LCD.h \
+  C:\Users\lilwiz\Documents\embedded\ projects\stopwatch/Systick_Timer.h \
+  C:\Users\lilwiz\Documents\embedded\ projects\stopwatch/Stopwatch.h

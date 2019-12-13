@@ -64,3 +64,10 @@ void displaySecFractions(){
 	y = (int)(x * 100000);
 	LCD_Int(y);
 }
+
+void BlinkLed (void){
+	for(int i = 0; i < 10; ++i) {
+    	GPIO_PORTF_DATA_R ^= 0x2;
+		SysTick_Wait1ms(500);
+    }
+}

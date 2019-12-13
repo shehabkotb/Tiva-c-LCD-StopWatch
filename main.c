@@ -48,9 +48,11 @@ int main()
 						break;
 					}
 				}
-				if(stopped)
+				if(stopped){
+					BlinkLed();
 					break;
-				
+				}
+					
 				if((++sec) == 60) {
 					sec = 0;
 					if((++min) == 60){

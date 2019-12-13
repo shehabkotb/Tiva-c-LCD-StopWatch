@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.2.214/W32 for ARM                  13/Dec/2019  18:16:04
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  13/Dec/2019  19:27:34
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =
@@ -10,7 +10,7 @@
 #        C:\Users\lilwiz\Documents\embedded
 #        projects\stopwatch\Debug\List\stopwatch.map
 #    Command line =
-#        -f C:\Users\lilwiz\AppData\Local\Temp\EW5321.tmp
+#        -f C:\Users\lilwiz\AppData\Local\Temp\EWC8D7.tmp
 #        ("C:\Users\lilwiz\Documents\embedded
 #        projects\stopwatch\Debug\Obj\Keypad.o"
 #        "C:\Users\lilwiz\Documents\embedded
@@ -74,26 +74,26 @@ No sections matched the following patterns:
   .intvec   ro code          0x0    0x40  vector_table_M.o [4]
                           - 0x40    0x40
 
-"P1":                              0x908
+"P1":                              0x930
   .text     ro code         0x40   0x246  DblDiv.o [3]
   .text     ro code        0x286     0x2  vector_table_M.o [4]
   .text     ro code        0x288   0x1a2  DblMul.o [3]
   .text     ro code        0x42c   0x13e  LCD.o [1]
   .text     ro code        0x56c    0x5c  Systick_Timer.o [1]
   .text     ro code        0x5c8    0x36  strlen.o [4]
-  .text     ro code        0x600   0x104  Stopwatch.o [1]
-  .text     ro code        0x704    0x1a  U32ToDbl.o [3]
-  .text     ro code        0x720    0x3a  DblToS32.o [3]
-  .text     ro code        0x75c    0xe8  Port_INIT.o [1]
-  .text     ro code        0x844    0x8c  main.o [1]
-  .text     ro code        0x8d0    0x22  fpinit_M.o [3]
-  .text     ro code        0x8f4    0x1e  cmain.o [4]
-  .text     ro code        0x912     0x4  low_level_init.o [2]
-  .text     ro code        0x916     0x4  exit.o [2]
-  .text     ro code        0x91c     0xa  cexit.o [4]
-  .text     ro code        0x928    0x14  exit.o [5]
-  .text     ro code        0x93c     0xc  cstartup_M.o [4]
-                         - 0x948   0x908
+  .text     ro code        0x600   0x128  Stopwatch.o [1]
+  .text     ro code        0x728    0x1a  U32ToDbl.o [3]
+  .text     ro code        0x744    0x3a  DblToS32.o [3]
+  .text     ro code        0x780    0xe8  Port_INIT.o [1]
+  .text     ro code        0x868    0x90  main.o [1]
+  .text     ro code        0x8f8    0x22  fpinit_M.o [3]
+  .text     ro code        0x91c    0x1e  cmain.o [4]
+  .text     ro code        0x93a     0x4  low_level_init.o [2]
+  .text     ro code        0x93e     0x4  exit.o [2]
+  .text     ro code        0x944     0xa  cexit.o [4]
+  .text     ro code        0x950    0x14  exit.o [5]
+  .text     ro code        0x964     0xc  cstartup_M.o [4]
+                         - 0x970   0x930
 
 "P2":                             0x1000
   CSTACK             0x2000'0000  0x1000  <Block>
@@ -104,7 +104,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-        0x948     0x3'ffff  0x3'f6b8
+        0x970     0x3'ffff  0x3'f690
   0x2000'1000  0x2000'7fff    0x7000
 
 
@@ -122,11 +122,11 @@ command line/config:
 C:\Users\lilwiz\Documents\embedded projects\stopwatch\Debug\Obj: [1]
     LCD.o                 318
     Port_INIT.o           232
-    Stopwatch.o           260
+    Stopwatch.o           296
     Systick_Timer.o        92
-    main.o                140
+    main.o                144
     ----------------------------------
-    Total:              1'042
+    Total:              1'082
 
 dl7M_tln.a: [2]
     exit.o                  4
@@ -160,7 +160,7 @@ shb_l.a: [5]
     Gaps                   16
     Linker created               4'096
 --------------------------------------
-    Grand Total:        2'376    4'096
+    Grand Total:        2'416    4'096
 
 
 *******************************************************************************
@@ -169,7 +169,8 @@ shb_l.a: [5]
 
 Entry                     Address  Size  Type      Object
 -----                     -------  ----  ----      ------
-?main                       0x8f5        Code  Gb  cmain.o [4]
+?main                       0x91d        Code  Gb  cmain.o [4]
+BlinkLed                    0x6cf  0x20  Code  Gb  Stopwatch.o [1]
 CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
 CSTACK$$Limit         0x2000'1000         --   Gb  - Linker created -
 Configure_SysTick           0x56d   0xc  Code  Gb  Systick_Timer.o [1]
@@ -179,34 +180,34 @@ LCD_clear                   0x4d7   0xa  Code  Gb  LCD.o [1]
 LCD_command                 0x42d  0x36  Code  Gb  LCD.o [1]
 LCD_data                    0x463  0x24  Code  Gb  LCD.o [1]
 LCD_start                   0x491  0x46  Code  Gb  LCD.o [1]
-PORTB_init                  0x75d  0x30  Code  Gb  Port_INIT.o [1]
-PORTC_init                  0x78d  0x34  Code  Gb  Port_INIT.o [1]
-PORTF_init                  0x7c1  0x42  Code  Gb  Port_INIT.o [1]
+PORTB_init                  0x781  0x30  Code  Gb  Port_INIT.o [1]
+PORTC_init                  0x7b1  0x34  Code  Gb  Port_INIT.o [1]
+PORTF_init                  0x7e5  0x42  Code  Gb  Port_INIT.o [1]
 Region$$Table$$Base           0x0         --   Gb  - Linker created -
 Region$$Table$$Limit          0x0         --   Gb  - Linker created -
 SysTick_Wait1ms             0x579  0x22  Code  Gb  Systick_Timer.o [1]
 SysTick_Wait1us             0x59b  0x20  Code  Gb  Systick_Timer.o [1]
-__aeabi_d2iz                0x721        Code  Gb  DblToS32.o [3]
+__aeabi_d2iz                0x745        Code  Gb  DblToS32.o [3]
 __aeabi_ddiv                 0x41        Code  Gb  DblDiv.o [3]
 __aeabi_dmul                0x289        Code  Gb  DblMul.o [3]
-__aeabi_ui2d                0x705        Code  Gb  U32ToDbl.o [3]
-__cmain                     0x8f5        Code  Gb  cmain.o [4]
-__exit                      0x929  0x14  Code  Gb  exit.o [5]
-__iar_init_vfp              0x8d1        Code  Gb  fpinit_M.o [3]
-__iar_program_start         0x93d        Code  Gb  cstartup_M.o [4]
-__low_level_init            0x913   0x4  Code  Gb  low_level_init.o [2]
+__aeabi_ui2d                0x729        Code  Gb  U32ToDbl.o [3]
+__cmain                     0x91d        Code  Gb  cmain.o [4]
+__exit                      0x951  0x14  Code  Gb  exit.o [5]
+__iar_init_vfp              0x8f9        Code  Gb  fpinit_M.o [3]
+__iar_program_start         0x965        Code  Gb  cstartup_M.o [4]
+__low_level_init            0x93b   0x4  Code  Gb  low_level_init.o [2]
 __vector_table                0x0        Data  Gb  vector_table_M.o [4]
-_call_main                  0x901        Code  Gb  cmain.o [4]
-_exit                       0x91d        Code  Gb  cexit.o [4]
-_main                       0x90f        Code  Gb  cmain.o [4]
+_call_main                  0x929        Code  Gb  cmain.o [4]
+_exit                       0x945        Code  Gb  cexit.o [4]
+_main                       0x937        Code  Gb  cmain.o [4]
 disableTimer                0x63d   0xc  Code  Gb  Stopwatch.o [1]
 displaySecFractions         0x68d  0x42  Code  Gb  Stopwatch.o [1]
 displayTime                 0x65f  0x2e  Code  Gb  Stopwatch.o [1]
 enableTimer                 0x631   0xc  Code  Gb  Stopwatch.o [1]
-exit                        0x917   0x4  Code  Gb  exit.o [2]
+exit                        0x93f   0x4  Code  Gb  exit.o [2]
 getOvrFlwFlg                0x649  0x16  Code  Gb  Stopwatch.o [1]
 itoa                        0x51f  0x3c  Code  Gb  LCD.o [1]
-main                        0x845  0x8c  Code  Gb  main.o [1]
+main                        0x869  0x90  Code  Gb  main.o [1]
 oneShotConfigure            0x601  0x30  Code  Gb  Stopwatch.o [1]
 reverse                     0x4fd  0x22  Code  Gb  LCD.o [1]
 strlen                      0x5c9        Code  Gb  strlen.o [4]
@@ -218,7 +219,7 @@ strlen                      0x5c9        Code  Gb  strlen.o [4]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-  2'376 bytes of readonly  code memory
+  2'416 bytes of readonly  code memory
   4'096 bytes of readwrite data memory
 
 Errors: none
