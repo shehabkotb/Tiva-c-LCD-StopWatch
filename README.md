@@ -6,3 +6,4 @@ pressing sw1 again the stopwatch will continue where it left off.
 [![](https://img.youtube.com/vi/sd7RZ3Pjgok/1.jpg)](https://youtu.be/sd7RZ3Pjgok)<br>
 [Watch the video](https://youtu.be/sd7RZ3Pjgok)
 # schematic
+![HERE LIES DRAGONS](image.png)
